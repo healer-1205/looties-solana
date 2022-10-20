@@ -4,7 +4,7 @@ import { BrowserRouter } from "react-router-dom";
 import { createClient, configureChains, defaultChains, WagmiConfig } from 'wagmi'
 import { publicProvider } from 'wagmi/providers/public'
 
-import './index.css';
+import './index.scss';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 

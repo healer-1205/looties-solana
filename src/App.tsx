@@ -1,14 +1,25 @@
-import React from "react"
+import { useEffect, useContext } from "react"
 import { Route, Routes } from "react-router-dom"
+import { ThemeContext, ThemeProvider } from "./context/ThemeContext"
 import { Home } from "./pages/Home"
-import "./App.css"
+import { Header } from "./components/Header/Header"
+import "./App.scss"
 
 function App() {
+  const { dark } = useContext(ThemeContext)
+  useEffect(() => {
+    if (dark === "theme-dark") {
+      document.documentElement.className = "theme-dark"
+    } else document.documentElement.className = "theme-light"
+  }, [dark])
   return (
     <>
-      <Routes>
-        <Route path="/" element={<Home />} />
-      </Routes>
+      <ThemeProvider>
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+        </Routes>
+      </ThemeProvider>
     </>
   )
 }

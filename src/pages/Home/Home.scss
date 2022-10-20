@@ -1,0 +1,43 @@
+.home {
+  background-color: var(--background-color);
+  padding: 100px;
+  &__title {
+    font-family: "Press Start 2P", cursive;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 70px;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: var(--utilitypage-title-text);
+  }
+  &__description {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: 0.055em;
+    color: var(--utilitypage-description-text);
+  }
+  &__Col {
+    padding: 30px 40px !important;
+  }
+  &__NFT {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .utility {
+    &__title {
+      font-size: 30px;
+      line-height: 50px;
+    }
+    &__description {
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+}
