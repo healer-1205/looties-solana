@@ -40,6 +40,10 @@ export const Home: React.FC = () => {
   ]
   return (
     <div className="home">
+      <div className="home__gradient1"></div>
+      <div className="home__gradient2"></div>
+      <div className="home__gradient3"></div>
+      <div className="home__gradient4"></div>
       <Container style={{ maxWidth: "960px" }}>
         <Row>
           <Col xs={12} md={12} lg={12}>

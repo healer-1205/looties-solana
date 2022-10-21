@@ -82,7 +82,9 @@ export const Header: React.FC = () => {
       </Offcanvas>
       <Row className="justify-content-center">
         <Col xs={5} lg={5}>
-          <img width="200px" src={Logos.Logo} alt="Logo" />
+          <Link to="/">
+            <img width="200px" src={Logos.Logo} alt="Logo" />
+          </Link>
         </Col>
         <Col xs={5} lg={5}>
           <ul className="navbar-li">
