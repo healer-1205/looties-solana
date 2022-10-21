@@ -73,6 +73,9 @@ export const Header: React.FC = () => {
                 <img src={svgIcons.twitterIcon} width="30" alt="twitter" />
               </Link>
             </li>
+            <li>
+              <button className="select-btn">SELECT WALLET</button>
+            </li>
           </ul>
         </Offcanvas.Body>
       </Offcanvas>
@@ -80,7 +83,7 @@ export const Header: React.FC = () => {
         <Col xs={5} lg={5}>
           <img width="200px" src={Logos.Logo} alt="Logo" />
         </Col>
-        <Col xs={4} lg={5}>
+        <Col xs={5} lg={5}>
           <ul className="navbar-li">
             {navLinks.map((nav, index) => {
               return (
@@ -115,7 +118,7 @@ export const Header: React.FC = () => {
         {/* <Col xs={2} lg={3} className="justify-content-around__switch-btn">
           <Toggle />
         </Col> */}
-        <Col xs={2} lg={2} className="btnContainer">
+        <Col xs={1} lg={2} className="btnContainer">
           <button className="select-btn">SELECT WALLET</button>
         </Col>
         <Col xs={1} className="menu-icon">

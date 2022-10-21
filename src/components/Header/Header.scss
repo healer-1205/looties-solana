@@ -23,9 +23,9 @@
 .navbar-li li a {
   text-decoration: none;
   color: var(--navbar-text);
-  font-family: "Poppins";
+  font-family: "Roboto", sans-serif;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 12px;
   line-height: 36px;
 }
@@ -34,9 +34,9 @@
   text-decoration: none;
   color: var(--navbar-text);
   padding: 10px;
-  font-family: "Poppins";
+  font-family: "Roboto", sans-serif;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 24px;
   line-height: 36px;
 }
@@ -127,7 +127,6 @@
   user-select: none;
   vertical-align: middle;
   appearance: none;
-  text-decoration: none;
   font-family: Roboto, Helvetica, Arial, sans-serif;
   font-weight: 500;
   font-size: 0.875rem;
@@ -143,12 +142,15 @@
   background-color: rgb(25, 118, 210);
   box-shadow: rgb(0 0 0 / 20%) 0px 3px 1px -2px, rgb(0 0 0 / 14%) 0px 2px 2px 0px, rgb(0 0 0 / 12%) 0px 1px 5px 0px;
   background: linear-gradient(275.68deg, #b386fe 5.91%, #92cfeb 50.2%, #a7fe89 101.53%);
+  height: 45px;
 }
 
 .select-btn:hover {
   text-decoration: none;
   background-color: rgb(21, 101, 192);
   box-shadow: rgb(0 0 0 / 20%) 0px 2px 4px -1px, rgb(0 0 0 / 14%) 0px 4px 5px 0px, rgb(0 0 0 / 12%) 0px 1px 10px 0px;
+  color: #292929;
+  border-radius: 10px;
 }
 
 @media only screen and (max-width: 768px) {
