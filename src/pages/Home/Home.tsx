@@ -1,11 +1,11 @@
 import React from "react"
 import { Col, Container, Row } from "react-bootstrap"
-import { useNavigate } from "react-router-dom"
+// import { useNavigate } from "react-router-dom"
 import { NFTs, Tokens } from "../../assets"
 import "./Home.scss"
 
 export const Home: React.FC = () => {
-  const navigate = useNavigate()
+  // const navigate = useNavigate()
   const solanaNftData = [
     {
       imageUrl: NFTs.Lootbox1,
@@ -84,6 +84,34 @@ export const Home: React.FC = () => {
               </Col>
             )
           })}
+        </Row>
+      </Container>
+      <h3 className="responsibly">Open Responsibly</h3>
+      <h2 className="recent">Recent Opens</h2>
+      <Container style={{ paddingBottom: "50px" }}>
+        <Row>
+          <Col sm={12} md={6} lg={6}>
+            <div style={{ padding: "12px" }}>
+              <div className="infoContainer">
+                <div className="infoContainer__info">
+                  <img src={NFTs.Lootbox1} width="54" height="54" className="infoContainer__info__img" alt="token" />
+                  <h6 className="infoContainer__info__title">5SJ...eQm opened 0.5 SOL and won 0.25 SOL</h6>
+                </div>
+                <p className="infoContainer__time">x mins ago</p>
+              </div>
+            </div>
+          </Col>
+          <Col sm={12} md={6} lg={6}>
+            <div style={{ padding: "12px" }}>
+              <div className="infoContainer">
+                <div className="infoContainer__info">
+                  <img src={NFTs.Lootbox1} width="54" height="54" className="infoContainer__info__img" alt="token" />
+                  <h6 className="infoContainer__info__title">5SJ...eQm opened 0.5 SOL and won 0.25 SOL</h6>
+                </div>
+                <p className="infoContainer__time">x mins ago</p>
+              </div>
+            </div>
+          </Col>
         </Row>
       </Container>
     </div>

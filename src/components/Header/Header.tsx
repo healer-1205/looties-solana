@@ -1,9 +1,10 @@
-import React, { useContext, useEffect, useState } from "react"
+// import React, { useContext, useEffect, useState } from "react"
+import React, { useState } from "react"
 import { Row, Col, Offcanvas } from "react-bootstrap"
 import { Link } from "react-router-dom"
 import { HiMenu } from "react-icons/hi"
 // import Toggle from "../ToggleTheme/Toggle"
-import { ThemeContext } from "../../context/ThemeContext"
+// import { ThemeContext } from "../../context/ThemeContext"
 import { Logos, svgIcons } from "../../assets"
 import "./Header.scss"
 import "bootstrap/dist/css/bootstrap.min.css"
@@ -14,13 +15,13 @@ export const Header: React.FC = () => {
   const handleShow = () => setShow(true)
   const [activeIndex, setActiveIndex] = useState(-1)
 
-  const { dark } = useContext(ThemeContext)
-  const [isDarkImage, setIsDarkImage] = useState(true)
-  useEffect(() => {
-    if (dark === "theme-dark") {
-      setIsDarkImage(true)
-    } else setIsDarkImage(false)
-  }, [dark])
+  // const { dark } = useContext(ThemeContext)
+  // const [isDarkImage, setIsDarkImage] = useState(true)
+  // useEffect(() => {
+  //   if (dark === "theme-dark") {
+  //     setIsDarkImage(true)
+  //   } else setIsDarkImage(false)
+  // }, [dark])
 
   const navLinks = [
     {
