@@ -86,7 +86,7 @@ export const Header: React.FC = () => {
             <img width="200px" src={Logos.Logo} alt="Logo" />
           </Link>
         </Col>
-        <Col xs={5} lg={5}>
+        <Col xs={5} lg={5} style={{ zIndex: 2 }}>
           <ul className="navbar-li">
             {navLinks.map((nav, index) => {
               return (
@@ -121,7 +121,7 @@ export const Header: React.FC = () => {
         {/* <Col xs={2} lg={3} className="justify-content-around__switch-btn">
           <Toggle />
         </Col> */}
-        <Col xs={1} lg={2} className="btnContainer">
+        <Col xs={1} lg={2} className="btnContainer" style={{ zIndex: 2 }}>
           <button className="select-btn">SELECT WALLET</button>
         </Col>
         <Col xs={1} className="menu-icon">
